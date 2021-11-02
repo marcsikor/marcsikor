@@ -58,18 +58,21 @@ def zad22():
     a = int(randrange(1,6))
     b = int(input('jaki numer został wylosowany?: '))
     
-    print(a=b)
+    print(f'{a==b}')
 
 
 def zad23():
 
     value = 15.84
     vat = 0.23
-    print(f'amount: {value} zł \nVAT {int(vat*100)}%: {value*vat} zł')
+    print(f'amount: {value} zł \nVAT {int(vat*100)}%: {value*vat:.2f} zł')
 
+
+# uncomment to view
 
 # zad15()	
 # zad19()
 # zad20()
 # zad21()
+# zad22()
 zad23()
