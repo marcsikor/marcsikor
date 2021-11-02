@@ -1,4 +1,4 @@
-def circle():
+def zad14():
 
 	#####
 	# Calculation of the area and circumference of a circle
@@ -17,7 +17,7 @@ def circle():
 	print(f"area = {area}, circumference = {circumference}") 
 
 
-def temperature():
+def zad15():
 	
 	temp = float(input("temperature in degrees: " ))
 	fahr = temp * 1.8 + 32
@@ -26,7 +26,7 @@ def temperature():
 	print(f'the temperature is {fahr} in F and {kelvin} in K')
 	
 
-def heron():
+def zad19():
 	
 	from math import sqrt
 	a = 3; b = 4; c = 5
@@ -35,7 +35,7 @@ def heron():
 	print(f"area of the triangle is {area}")
 	
 
-def bmi():
+def zad20():
 	
 	height = float(input('wzrost w cm: '))
 	mass = float(input('masa: '))
@@ -43,7 +43,7 @@ def bmi():
 	print(f'bmi index: {bmi}')	
 
 
-def dice():
+def zad21():
 	
 	from random import randrange
 	a = int(randrange(1,6)); b = int(randrange(1,6)); c = int(randrange(1,6))
@@ -51,9 +51,25 @@ def dice():
 	
 	print(f'sum of dices is: {sum}')
 	
-	
-# temperature()	
-# heron()
-# bmi()
-dice()
 
+def zad22():
+    
+    from random import randrange
+    a = int(randrange(1,6))
+    b = int(input('jaki numer został wylosowany?: '))
+    
+    print(a=b)
+
+
+def zad23():
+
+    value = 15.84
+    vat = 0.23
+    print(f'amount: {value} zł \nVAT {int(vat*100)}%: {value*vat} zł')
+
+
+# zad15()	
+# zad19()
+# zad20()
+# zad21()
+zad23()
